@@ -1,0 +1,17 @@
+<app-modal [ImagePath]="modalImagePath" [modalDisplay]="modalDisplay" (modalDisplayChanged)="modalDisplayChanged($event)"></app-modal>
+
+<div class="gallery">
+  <div class="pictureCard" *ngFor="let picture of gallery">
+    <img src={{picture.FilePath}} (click)="showModal($event)">
+    <div class="pictureInfo">
+      <div class="row">
+        <h3>{{picture.Name}}</h3>
+        <p>{{picture.Year}} год</p>
+      </div>
+      <h5>{{picture.Author}}</h5>
+      <br>
+      <p><strong>Размеры:</strong> {{picture.Size.Width}}x{{picture.Size.Height}}</p>
+      <p><strong>Местоположение:</strong> {{picture.Location}}</p>
+    </div>
+  </div>
+</div>

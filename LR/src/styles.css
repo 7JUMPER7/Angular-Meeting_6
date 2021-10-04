@@ -1,0 +1,22 @@
+body {
+  background-color: whitesmoke;
+  font-family: Bahnschrift;
+  font-weight: lighter;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #145a8c;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+  font-size: 17px;
+  transition: .3s cubic-bezier(.5, 0, 0, 1);
+}
+.container img {
+  border: 5px solid white;
+  border-radius: 10px;
+}
